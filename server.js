@@ -11,19 +11,26 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //serving public file
-app.use(express.static('./src'));
+app.use(express.static('./public'));
 // cookie parser middleware
 app.use(cookieParser());
 // sendFile will go
 /*
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/t-equality.html'));
+    res.sendFile(path.join(__dirname, '/index.html'));
   //  app.use(express.static(path.join(__dirname, 'files')));
 
 });
 
  */
-app.use(express.static(path.join(__dirname, '.')));
-
+/*
+Bei jeder Anfrage
+app.get('/',(req,res) => {
+    session=req.session;
+    if(session.userid){
+        res.send("Welcome User <a href=\'/logout'>click to logout</a>");
+    }else
+        res.sendFile('views/index.html',{root:__dirname})
+});*/
 app.listen(port);
 console.log('Server started at http://localhost:' + port);
