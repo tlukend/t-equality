@@ -10,4 +10,6 @@ routes.get('/logout', controller.logout);
 
 //wird /login angefragt wird controller.login aufgerufen
 routes.post('/login', controller.login);
+
+routes.post('/signup', controller.signUp);
 module.exports = routes;
