@@ -3,8 +3,8 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = process.env.PORT || 3000;
-const session = require('./src/authentication/session');
-session(app);
+//const session = require('./src/authentication/session');
+//session(app);
 const loginRouter = require('./src/api/routes/login-router');
 
 // parsing the incoming data. This will help us parser an HTTP POST method request from an HTML document.
