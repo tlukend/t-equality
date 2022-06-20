@@ -1,7 +1,6 @@
-@hostname=http://localhost:
+@hostname=http://localhost:3000
 
 get {{hostname}}
-
 ###
 
 post {{hostname}}
