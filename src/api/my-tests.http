@@ -1,5 +1,4 @@
 @hostname=http://localhost:3000
-
 get {{hostname}}
 ###
 
@@ -12,5 +11,16 @@ Content-Type:application/json
 
 ###
 
+put {{hostname}}
+Content-Type:
+
+####
+
+ delete {{hostname}}
+ 
+
+ ###
+
 get {{hostname}}/auth-endpoint
 Authorization:my-api-key-
+
