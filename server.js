@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const session = require('./src/authentication/session');
 session(app);
+const loginRouter = require('./src/api/routes/login-router');
 
 // parsing the incoming data. This will help us parser an HTTP POST method request from an HTML document.
 app.use(express.json());
@@ -32,5 +33,7 @@ app.get('/',(req,res) => {
     }else
         res.sendFile('views/index.html',{root:__dirname})
 });*/
+// Include the login routes
+app.use('/', loginRouter);
 app.listen(port);
 console.log('Server started at http://localhost:' + port);
