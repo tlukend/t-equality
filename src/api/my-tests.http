@@ -1,0 +1,17 @@
+@hostname=http://localhost:
+
+get {{hostname}}
+
+###
+
+post {{hostname}}
+Content-Type:application/json
+
+{
+    "message":
+}
+
+###
+
+get {{hostname}}/auth-endpoint
+Authorization:my-api-key-
