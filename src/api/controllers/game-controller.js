@@ -23,9 +23,9 @@ class GameController {
   }
 
   updateGame(req, res) {    
-    const name = parseInt(req.params.name);
+    const id = parseInt(req.params.id);
     if (!model.getGame(id)){
-        res.status(404).send ('No game with id ${id} exists. Update not possible.');
+        res.status(404).send (`No game with id ${id} exists. Update not possible.`);
         }else {
           const game = req.body;
           
@@ -35,7 +35,7 @@ class GameController {
   }
 
   getGame(req, res) {    
-    res.send(model.getGame(parseInt(req.params.name)));
+    res.send(model.getGame(parseInt(req.params.id)));
   }
 }
  module.exports = new  GameController();

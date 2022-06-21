@@ -36,6 +36,7 @@ class GameModel{
   }
 
   getGame(id) {    
+    console.log(id);
     return this.games.get(id);
   }
 
