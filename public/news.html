@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="t-equality.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/index.js"></script>
+    <script src="./js/news.js"></script>
 </head>
 
 <body>
@@ -21,15 +22,22 @@
         </header>
 
         <nav id="i2">
+            <button><a href="login.html">Login</a></button>
+            <img id="icon" src="images/icon.png" alt="icon" />
+            <button><a href="signup.html">Sign up</a></button>
             <h2 id="categories">Choose a category and become a programmer now </h2>
-            <ul class="categories" id="menulist">
-                <li><a href="quiz.html">Code n Quiz</a></li>
-                <li><a href="game.html">Code n Game</a></li>
+            <ul id="menulist" class="categories">
                 <li>
-                    <a href="idols.html">our IT-Idols</a>
+                    <a href="quiz.html"><img id="quiz" src="images/quiz.png"></a>
                 </li>
                 <li>
-                    <a href="news.html">IT-News</a>
+                    <a href="game.html"><img id="game" src="images/game.png"></a>
+                </li>
+                <li>
+                    <a href="idols.html"><img id="idols" src="images/idols.png"></a>
+                </li>
+                <li>
+                    <a href="news.html"><img id="news" src="images/news.png"></a>
                 </li>
                 <li><a href="q&a.html">Q&A</a></li>
             </ul>
@@ -45,6 +53,7 @@
             </section>
 
             <section id="mainWindow">
+                <ul id="newslist"></ul>
                 <h3>You didn't get started yet? What are you waiting for? Go ahead and click through our categories to start the fun part!</h3>
 
                 <fieldset>
