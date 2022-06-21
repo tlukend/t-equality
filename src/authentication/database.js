@@ -25,11 +25,16 @@ const shaSecret = 'Dukjaidwhdjqf';
          }
          return Database.instance;
      }
-     constructor(){
+     constructor() {
          this._app = initializeApp(firebaseConfig);
          this._db = getFirestore(this._app);
          this._accounts = collection(this._db, 'accounts');
+         this._questions = collection(this._db, 'questions');
      }
+     getDatabase() { return this._db; }
+     getQuestions() { return this._questions; }
+
+
      async checkLogin(email, password){
          //password hashing
          const hashedPassword = crypto.createHmac('sha256', shaSecret).update(password).digest('hex');
@@ -38,12 +43,13 @@ const shaSecret = 'Dukjaidwhdjqf';
          return result.docs.map(doc => doc.data());
      }
 
-     async signUp(email, password, userid){
+     async signUp(email, password, userid) {
          //password hashing
          const hashedPassword = crypto.createHmac('sha256', shaSecret).update(password).digest('hex');
          const q = query(this._accounts, where('email', '==', email));
-         let result = await getDocs(q);
-         if(result.size > 0){
+         let result = await getDocs(q).then(x => {return 3;}).then(x=> {});
+
+         if (result.size > 0) {
              throw new Error('Email already exists!');
          }
          return await setDoc(doc(this._accounts), {
@@ -52,6 +58,8 @@ const shaSecret = 'Dukjaidwhdjqf';
              password: hashedPassword
          });
      }
+
+
 
  }
 

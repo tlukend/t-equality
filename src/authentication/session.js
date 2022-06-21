@@ -12,5 +12,4 @@ module.exports = function (app){
         cookie: { maxAge: oneDay },
         resave: false
     }));
-
 }

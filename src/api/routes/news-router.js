@@ -6,3 +6,5 @@ const routes = Router();
 
 
 routes.get('/api/topheadlines',controller.topHeadlines);
+
+module.exports = routes;
