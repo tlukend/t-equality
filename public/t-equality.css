@@ -145,4 +145,5 @@ body {
         grid-template-areas: "header header header header header" "nav nav nav nav nav" "aside main main main footer" "aside none none none footer";
         width: 100%;
     }
+
 }

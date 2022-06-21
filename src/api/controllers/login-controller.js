@@ -20,10 +20,18 @@ class LoginController {
     }
     signUp(req, res){
         database.getInstance().signUp(req.body.email, req.body.password, req.body.userid).then(()=>{
-            res.status(200).send();
+            res.status(200).redirect('/')
         }).catch(err => {
             res.status(409).send(err.message);
         });
+    }
+
+    getUserData(req, res){
+        if(req.session.userid){
+            res.send({userid: req.session.userid});
+        }else{
+            res.send({});
+        }
     }
 }
 
