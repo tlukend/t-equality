@@ -48,4 +48,4 @@ model.addTicket(new Ticket("lh2022",20));
 model.addTicket(new Ticket("mh2023",30));
 model.addTicket(new Ticket("th2024",40));
 
-module.exports = model; ?");
+module.exports = model; 

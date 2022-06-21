@@ -6,9 +6,9 @@ class NewsController{
 topHeadlines(req,res){
     newsapi.v2.topHeadlines({
         
-        q: 'bitcoin',
-        category: 'business',
-        language: 'en'
+        q: 'Frauen',
+        category: 'technology',
+        language: 'de'
        
       }).then(response => {
        console.log(response);
