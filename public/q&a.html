@@ -45,8 +45,32 @@
         <main id="i3">
             <a id="top"></a>
 
+
             <section id="q&a_welcomeText">
+
                 <h2>Questions and answers</h2>
+                <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                    <input type="text" id="add-question" placeholder="Your Question">
+                    <input type="submit" value="Add" class="btn btn-primary">
+                </form>
+                <p>Questions: </p>
+                <p id="counter"></p>
+
+                <table>
+                    <tr class="quests">
+                        <th><h3>Your Q's: </h3></th>
+                    </tr>
+                    <tbody id="qs">
+                    </tbody>
+                </table>
+
+                <div id="edit-box" >
+                    <form action="javascript:void(0);" method="POST" id="save-edit">
+                        <input type="text" id="edit-question">
+                        <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+                    </form>
+                </div>
+
                 <p>You still have some questions? Here are some answers to our most frequently asked questions.</p>
                 <p>Why we do this project?<br>Because it is an important topic for us!<br></p>
                 <p>What is our aim with this topic?<br>To show : T-Equality is important and everybody can be succesfull!<br></p>

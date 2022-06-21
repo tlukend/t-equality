@@ -147,6 +147,17 @@ button {
     grid-area: footer;
 }
 
+#edit-box{
+    display: none;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.quests{
+    background: transparent;
+}
+
 #i41 {
     grid-area: aside;
 }
