@@ -7,17 +7,31 @@ fetch('http://localhost:3000/questions')
             let td = document.createElement("td");
             let tbody = document.querySelector('#qs');
             let button = document.createElement("button");
+            let editButton = document.createElement("button");
+            button.id = 'x';
+            editButton.id = 'edit';
+
             span.innerHTML = '<b>' + question.userid + ':</b> ' + question.question;
             button.textContent = "X";
+            editButton.textContent = "Edit";
+
 
             button.onclick = function() {
                 deleteQuestion(question.id);
             };
 
+            editButton.onclick = function () {
+
+            };
+
             td.append(span);
             td.append(button);
+            td.append(editButton);
             tr.append(td);
             tbody.append(tr);
+
+
+
         }
     });
 
@@ -45,7 +59,7 @@ function deleteQuestion(id) {
         });
 }
 
-function putQuestion() {
+function putQuestion(id) {
     fetch('http://localhost:3000/question/' + id, {
         method: 'PUT',
         headers: {

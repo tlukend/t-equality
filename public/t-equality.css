@@ -164,6 +164,12 @@ button {
     grid-area: login;
 }
 
+#x {
+    background-color: red;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 footer,
 aside {
     padding: 10px;
