@@ -6,13 +6,17 @@ class NewsController{
 topHeadlines(req,res){
     newsapi.v2.topHeadlines({
         
-        q: 'Frauen',
+        q: 'Women',
         category: 'technology',
         language: 'de'
        
       }).then(response => {
        console.log(response);
+       if(response){
        res.send(response.articles);
+       }else{
+           res.status(204).send('There are currently no articles to display!');
+       }
         /*
           {
             status: "ok",
