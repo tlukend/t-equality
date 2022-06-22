@@ -82,13 +82,13 @@ ul>li {
 
 button:hover {
     border-style: inset;
-    font-weight: 3000;
+    font-weight: 1000;
     font-size: x-large;
 }
 
 ul>li:hover {
     border-style: inset;
-    font-weight: 3000;
+    font-weight: 1000;
     font-size: x-large;
 }
 
@@ -132,7 +132,7 @@ header {
 
 button {
     border-style: inset;
-    font-weight: 3000;
+    font-weight: 1000;
     background-color: rgb(246, 246, 115);
 }
 
