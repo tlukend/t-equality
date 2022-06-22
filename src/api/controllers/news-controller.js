@@ -6,7 +6,7 @@ class NewsController{
 topHeadlines(req,res){
     newsapi.v2.topHeadlines({
         
-        q: 'Women',
+        q: 'bitcoin',
         category: 'technology',
         language: 'de'
        
