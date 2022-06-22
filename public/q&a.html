@@ -39,7 +39,9 @@
                 <li>
                     <a href="news.html"><img id="news" src="images/news.png"></a>
                 </li>
-                <li><a href="q&a.html">Q&A</a></li>
+                <li>
+                    <a href="q&a.html"><img id="qanda" src="images/q&a.png"></a>
+                </li>
             </ul>
         </nav>
 
@@ -58,17 +60,19 @@
                 <table>
                     <thead>
                         <tr class="quests">
-                            <th><h3>Your Q's: </h3></th>
+                            <th>
+                                <h3>Your Q's: </h3>
+                            </th>
                         </tr>
                     </thead>
                     <tbody id="qs">
                     </tbody>
                 </table>
 
-                <div id="edit-box" >
+                <div id="edit-box">
                     <form action="javascript:void(0);" method="POST" id="save-edit">
                         <input type="text" id="edit-question">
-                        <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+                        <input type="submit" value="Save" class="btn btn-success" /> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
                     </form>
                 </div>
 

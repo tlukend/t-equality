@@ -1,7 +1,7 @@
 fetch('http://localhost:3000/questions')
     .then(response => response.json())
     .then(data => {
-        for(let question of data) {
+        for (let question of data) {
             let span = document.createElement("span");
             let tr = document.createElement("tr");
             let td = document.createElement("td");
@@ -38,10 +38,11 @@ function addQuestion() {
 
 function deleteQuestion(id) {
     fetch('http://localhost:3000/question/' + id, {
-        method: 'DELETE'})
+            method: 'DELETE'
+        })
         .then(r => {
-        window.location.reload();
-    });
+            window.location.reload();
+        });
 }
 
 function putQuestion() {

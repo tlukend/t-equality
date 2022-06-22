@@ -74,7 +74,10 @@ ul>li {
     width: 40px;
 }
 
-button {}
+#qanda {
+    height: 40px;
+    width: 40px;
+}
 
 button:hover {
     border-style: inset;
