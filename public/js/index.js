@@ -3,7 +3,7 @@ console.log(document.cookie);
 fetch('http://localhost:3000/userdata')
     .then(response => response.json())
     .then(data => {
-        if(data.userid){
+        if (data.userid) {
             let li = document.createElement("li");
             let ul = document.querySelector('#menulist');
             let a = document.createElement("a");
@@ -11,7 +11,7 @@ fetch('http://localhost:3000/userdata')
             a.textContent = 'logout';
             li.append(a);
             ul.append(li);
-        }else{
+        } else {
             let li = document.createElement("li");
             let ul = document.querySelector('#menulist');
             let a = document.createElement("a");
