@@ -1,23 +1,15 @@
-@media only screen and (max-width: 768px){
-    main{
+@media only screen and (max-width: 768px) {
+    main {
         min-height: 60vh;
     }
-
 }
-@media only screen and (min-width: 768px) {
 
+@media only screen and (min-width: 768px) {
     #i4 {
         grid-area: footer;
         text-align: center;
     }
     #i41 {
         text-align: center;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: "nav nav nav nav nav" "header header header header header" "aside main main main footer" "aside main main main footer" "aside none none none footer";
-        width: 100%;
     }
 }
