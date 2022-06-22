@@ -21,6 +21,15 @@ fetch('http://localhost:3000/questions')
             };
 
             editButton.onclick = function () {
+            let editBox = document.createElement("input");
+            editBox.id = 'editBox';
+            editBox.type = 'text';
+            tr.append(editBox);
+            let finalEditButton = document.createElement('button');
+            finalEditButton.id ='finalEditButton';
+            finalEditButton.textContent = 'Done';
+            tr.append(finalEditButton);
+            td.hidden = true;
 
             };
 
