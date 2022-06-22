@@ -4,47 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <title>T-Equality</title>
-    <link rel="stylesheet" href="t-equality.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/index.js"></script>
+    <script src="./js/low-bandwidth.js"></script>
     <script src="./js/q&a.js"></script>
+
 </head>
 
 <body>
+
     <div class="container">
         <header id="i1">
-            <img id="t-e-symbol" src="images/kids-gee5058cd0_1280.png" alt="t-e-symbol" />
-
             <h1>T-Equality</h1>
-            <img id="t-e-symbol" src="images/kids-gee5058cd0_1280.png" alt="t-e-symbol" />
-
-
         </header>
 
         <nav id="i2">
-
             <h2 id="categories">Choose a category and become a programmer now </h2>
             <ul id="menulist" class="categories">
                 <li>
-                    <a href="quiz.html"><img id="quiz" src="images/quiz.png"></a>
+                    <a href="low-quiz.html">Quiz</a>
                 </li>
                 <li>
-                    <a href="game.html"><img id="game" src="images/game.png"></a>
+                    <a href="low-game.html">Game</a>
                 </li>
                 <li>
-                    <a href="idols.html"><img id="idols" src="images/idols.png"></a>
+                    <a href="low-idols.html">Idols</a>
                 </li>
                 <li>
-                    <a href="news.html"><img id="news" src="images/news.png"></a>
+                    <a href="low-news.html">News</a>
                 </li>
                 <li>
-                    <a href="q&a.html"><img id="qanda" src="images/qanda.png"></a>
+                    <a href="low-qanda.html">Q&A</a>
                 </li>
+
             </ul>
         </nav>
 
         <main id="i3">
             <a id="top"></a>
+            <form action="/login" method="post" class="login">
+                <h2>Login</h2>
+                <div class="input-field">
+                    <input type="email" id="email" name="email" placeholder="user@example.com" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </div>
+                <input type="submit" value="Login" class="login" id="login-button">
+
+            </form>
+            <form action="/signup" method="post" class="login">
+                <h2>Sign Up</h2>
+                <div class="input-field">
+                    <input type="email" name="email" placeholder="user@example.com" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" placeholder="Enter Password">
+                </div>
+                <div class="input-field">
+                    <input type="text" name="userid" id="userid" placeholder="Enter Username">
+                </div>
+                <input type="submit" value="Sign up" class="signUp" id="signup-button">
+            </form>
 
 
             <section id="q&a_welcomeText">
@@ -128,26 +148,18 @@
             </fieldset>
             </section>
 
-
-
-
-
-
-            </section>
-
             <br>
             <a id="gototop" href="#top">Go to Top</a><br>
-            <a href="index.html">back to main page</a>
+            <a href="low-index.html">back to main page</a>
         </main>
 
         <aside id="i4">
-            <h2>We believe in you and you should too!</h2>
-            <a href="low-qanda.html">Show low bandwith webpage</a>
-
+            <h2><br>We believe in you and you should too!</h2><br>
+            <a href="q&a.html">Show original Webpage</a>
         </aside>
 
         <footer id="i41">
-            <br> &copy; T-Equality<br> Created by<br>Slavica Alvir<br>Tina Lukenda<br>Are Maksimovic<br>Faryal Rasuli</a>
+            <br> &copy; T-Equality<br> Created by<br>Slavica Alvir<br>Tina Lukenda<br>Are Maksimovic<br>Faryal Rasuli
         </footer>
     </div>
 </body>
