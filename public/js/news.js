@@ -13,8 +13,11 @@ fetch('http://localhost:3000/api/news/topheadlines/')
                     const list = document.querySelector("#newslist");
                     let p = document.createElement("p");
                     let h4 = document.createElement("h4");
+                    let link = document.createElement('a');
                     h4.textContent = news.title;
-                    p.append(h4.textContent + news.description);
+                    link.textContent = news.url;
+                    link.href = news.url;
+                    p.append(h4, link);
                     list.append(p);
                 }
             }
