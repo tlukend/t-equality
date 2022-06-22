@@ -3,7 +3,6 @@ const model = require("../models/game-model");
 class GameController {
   getGames(req,res){
     const response = model.getGames();
-    console.log(response);
     res.send(response);
   }
 
@@ -12,11 +11,6 @@ class GameController {
   }
 
   createGame(req,res){
-    /*
-    const gamevideo= req.body.gamevideo;
-    const name = req.body.name;
-    console.log(name);
-*/
     const game = req.body;
     model.addGame(game);
     res.send(game);

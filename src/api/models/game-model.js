@@ -35,8 +35,7 @@ class GameModel{
     return Array.from(this.games.values());
   }
 
-  getGame(id) {    
-    console.log(id);
+  getGame(id) {
     return this.games.get(id);
   }
 
