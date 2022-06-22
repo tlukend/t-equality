@@ -47,7 +47,7 @@ const shaSecret = 'Dukjaidwhdjqf';
          //password hashing
          const hashedPassword = crypto.createHmac('sha256', shaSecret).update(password).digest('hex');
          const q = query(this._accounts, where('email', '==', email));
-         let result = await getDocs(q).then(x => {return 3;}).then(x=> {});
+         let result = await getDocs(q);
 
          if (result.size > 0) {
              throw new Error('Email already exists!');
