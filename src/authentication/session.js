@@ -10,6 +10,7 @@ module.exports = function (app){
         secret: "s32345esheh4kr337kesgdfhsy5636363",
         saveUninitialized:true,
         cookie: { maxAge: oneDay },
-        resave: false
+        resave: false,
+        name: 'tequality'
     }));
 }

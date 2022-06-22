@@ -25,7 +25,7 @@ class QAController {
             } else {
                 res.status(404).send();
             }
-        });;
+        });
     }
 
     addQuestion(req, res) {
@@ -54,6 +54,7 @@ class QAController {
             question: req.body.question,
             userid: req.session.userid
         };
+
         model.editQuestion(req.params.id, question).then(result => {
             if(result) {
                 res.send(result);

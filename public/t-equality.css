@@ -2,11 +2,12 @@
 body {
     background-image: url('images/gettyimages-165928067-612x612.jpg');
     background-size: cover;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive !important;
     padding: 0;
     border: 0;
     margin: 0;
     width: 100%;
+    overflow-y:scroll;
 }
 
 p {
@@ -72,6 +73,11 @@ ul>li {
 #qanda {
     height: 40px;
     width: 40px;
+}
+#menulist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 button:hover {
@@ -193,8 +199,13 @@ div,
 body {
     height: 100%;
 }
-
+@media only screen and (max-width: 768px){
+    main{
+        min-height: 60vh;
+    }
+}
 @media only screen and (min-width: 768px) {
+
     #i4 {
         grid-area: footer;
         text-align: center;
