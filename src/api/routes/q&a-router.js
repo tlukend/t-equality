@@ -6,6 +6,6 @@ const routes = Router();
 routes.get('/questions', controller.getQuestions);
 routes.post('/questions', controller.addQuestion);
 routes.delete('/question/:id', controller.deleteQuestion);
-routes.put('/questions/:id', controller.editQuestion);
+routes.put('/question/:id', controller.editQuestion);
 
 module.exports = routes;

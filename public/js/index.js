@@ -1,4 +1,3 @@
-console.log(document.cookie);
 
 fetch('http://localhost:3000/userdata')
     .then(response => response.json())
@@ -11,6 +10,7 @@ fetch('http://localhost:3000/userdata')
             a.textContent = 'logout';
             li.append(a);
             ul.append(li);
+            window.userid = data.userid;
         } else {
             let li = document.createElement("li");
             let ul = document.querySelector('#menulist');

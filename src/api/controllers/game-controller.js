@@ -12,11 +12,6 @@ class GameController {
   }
 
   createGame(req,res){
-    /*
-    const gamevideo= req.body.gamevideo;
-    const name = req.body.name;
-    console.log(name);
-*/
     const game = req.body;
     model.addGame(game);
     res.send(game);

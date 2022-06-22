@@ -11,7 +11,6 @@ class NewsController {
             language: 'de'
 
         }).then(response => {
-            console.log(response);
             if (response) {
                 res.send(response.articles);
             } else {

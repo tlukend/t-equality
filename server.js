@@ -20,24 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 // cookie parser middleware
 app.use(cookieParser());
-// sendFile will go
-/*
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '/index.html'));
-  //  app.use(express.static(path.join(__dirname, 'files')));
 
-});
 
- */
-/*
-Bei jeder Anfrage
-app.get('/',(req,res) => {
-    session=req.session;
-    if(session.userid){
-        res.send("Welcome User <a href=\'/logout'>click to logout</a>");
-    }else
-        res.sendFile('views/index.html',{root:__dirname})
-});*/
 // Include the login routes
 app.use('/', loginRouter);
 app.use('/api/news', newsRouter);
