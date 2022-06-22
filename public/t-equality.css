@@ -55,23 +55,23 @@ ul>li {
 }
 
 #game {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #news {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #idols {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 #quiz {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 button {}
@@ -147,14 +147,14 @@ button {
     grid-area: footer;
 }
 
-#edit-box{
+#edit-box {
     display: none;
     max-width: 80%;
     margin: auto;
     margin-top: 10px;
 }
 
-.quests{
+.quests {
     background: transparent;
 }
 
