@@ -111,7 +111,8 @@ header {
     padding: 10px;
 }
 
-#t-e-symbol {
+#t-e-symbol,
+#t-e-symbol2 {
     height: 70px;
     width: 70px;
 }
