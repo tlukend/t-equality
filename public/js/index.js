@@ -1,4 +1,3 @@
-
 fetch('http://localhost:3000/userdata')
     .then(response => response.json())
     .then(data => {
